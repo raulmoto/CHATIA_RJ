@@ -1,0 +1,30 @@
+<project name="chatia" basedir="." default="todo">
+
+    <property name="src" value="src"/>
+    <property name="lib"
+              value="lib/mysql-connector-java-8.0.30.jar:lib/log4j-api-2.5.jar:lib/log4j-core-2.5.jar:etc"/>
+    <property name="classes" value="classes"/>
+    <property name="packages" value="com.chatia"/>
+    <property name="title" value="Documentacion chatiarj"/>
+
+    <target name="clean">
+        <delete dir="${classes}"/>
+    </target>
+
+    <target name="compile" depends="clean">
+        <mkdir dir="${classes}"/>
+        <javac srcdir="${src}" destdir="${classes}" classpath="${lib}" debug="true"
+               includeantruntime="false"/>
+        <echo message="Compilation...done"/>
+    </target>
+
+    <target name="run" depends="compile">
+        <java classname="${packages}.Main" fork="true">
+            <classpath>
+                <pathelement path="${classes}"/>
+                <pathelement path="${lib}"/>
+            </classpath>
+        </java>
+    </target>
+    <target name="todo" depends="run"/>
+</project>
