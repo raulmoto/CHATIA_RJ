@@ -1,0 +1,3 @@
+[submodule "html/CHATIA"]
+	path = html/CHATIA
+	url = https://github.com/raulmoto/CHATIA_RJ.git
