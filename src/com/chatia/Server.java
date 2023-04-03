@@ -18,9 +18,9 @@ public class Server {
         Main.console.info("Server has started at port " + PORT);
         server.createContext("/api", new APIHandler(listener));
         if(debub){
-            server.createContext("/", new HTMLDebugHandler("./html"));
+            server.createContext("/", new HTMLDebugHandler("./html/CHATIA/src/app"));
         }else{
-            server.createContext("/", new HTMLHandler("./html"));
+            server.createContext("/", new HTMLHandler("./html/CHATIA/src/app"));
         }
         server.setExecutor(null);
         server.start();

@@ -1,0 +1,8 @@
+2023-42-03 00:42:33.407 [main] INFO  class com.chatia.Main - [32mServer has started at port 8080[0m
+2023-54-03 00:54:40.992 [Thread-1] WARN  class com.chatia.Main - [33mError in com.chatia.APIHandler$1. Error type: java.lang.ArrayIndexOutOfBoundsException. Message: Index 5 out of bounds for length 5[0m
+2023-54-03 00:54:40.993 [Thread-1] INFO  class com.chatia.Main - [32mGET: {} HEADERS: [api][0m
+2023-08-03 02:08:58.796 [main] INFO  class com.chatia.Main - [32mServer has started at port 8080[0m
+2023-13-03 02:13:29.906 [main] INFO  class com.chatia.Main - [32mServer has started at port 8080[0m
+2023-15-03 02:15:57.027 [main] INFO  class com.chatia.Main - [32mServer has started at port 8080[0m
+2023-19-03 02:19:16.659 [main] INFO  class com.chatia.Main - [32mServer has started at port 8080[0m
+2023-28-03 02:28:14.395 [main] INFO  class com.chatia.Main - [32mServer has started at port 8080[0m
