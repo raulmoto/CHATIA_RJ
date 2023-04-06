@@ -1,0 +1,48 @@
+.button-container {
+  background-image: url('../img/naranja.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Regla para contenedor de botones */
+.button-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+/* Regla para botones */
+.blue-button {
+  background-color: rgb(229, 233, 30);
+  color: white;
+  margin-right: 10px;
+  border-radius: 15px;
+  font-size: 30px;
+}
+
+/* Agrega la clase "floating" a cualquier botón que quieras animar */
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  /* En el primer paso de la animación, mueve hacia arriba y hacia abajo */
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  /* En el último paso, regrese a la posición inicial */
+  100% {
+    transform: translatey(0px);
+  }
+}
